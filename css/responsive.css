@@ -1,0 +1,24 @@
+/* To make the webpage responsive so that it can be viewed efficiently accross devices of different sizes and dimensions */
+@media screen and (max-width:1029px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .logo {
+        justify-content: center;
+        margin: 12px 0;
+    }
+
+    nav ul {
+        justify-content: center;
+        height: 34px;
+    }
+
+    .search {
+        justify-content: center;
+    }
+
+    .cards {
+        overflow: scroll;
+    }
+}

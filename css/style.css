@@ -1,0 +1,117 @@
+/* Main CSS */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+:root {
+    --main-bg-color: #5620a5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+
+    background-color: var(--main-bg-color);
+    font-family: 'Oswald', sans-serif;
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 77px;
+}
+
+nav ul {
+    height: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 23px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    /* this decides what will happen to the header navigation elements if the user hovers the cursor over it */
+    color: rgb(207, 16, 16);
+    font-weight: bold;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    width: 35vw;
+    height: 37px;
+    background-color: #c7afed;
+    border-color: #5620a5;
+    border-radius: 6px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    padding: 4px;
+}
+
+.search img {
+    height: 34px;
+    padding: 5px;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card {
+    background-color: #c7afed;
+    max-width: 93vw;
+    margin: auto;
+    font-family: 'Oswald', sans-serif;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card-item {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 24px;
+}
+
+.card h2 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.container {
+    /* basically calculating the effective height of the main content of the page which is:- total height - (height(header)+height(footer)) */
+    min-height: calc(100vh - 58px - 10vh);
+    background-color: var(--main-bg-color);
+}
+
+footer {
+    height: 10vh;
+    background-color: black;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
